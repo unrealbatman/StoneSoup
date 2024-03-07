@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4243661851364308}
   - component: {fileID: 114252373118954356}
   m_Layer: 0
-  m_Name: sample_exit_room
+  m_Name: start_room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,9 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomAuthor: AP Thomson
-  designedRoomFile: {fileID: 4900000, guid: 3877756bd147e45749107e25628f84e3, type: 3}
+  designedRoomFile: {fileID: 4900000, guid: 1d7da88071c43e944846ea7ccc463135, type: 3}
   localTilePrefabs:
-  - {fileID: 1387771116485768, guid: ce2d79339b8a6426fa12ae397abdfaad, type: 2}
-  - {fileID: 1387771116485768, guid: e4d00d2fcd2614042856187fc264cd0d, type: 3}
+  - {fileID: 1224687453642000, guid: bba9de82886db444980f5c22f285e992, type: 3}
+  - {fileID: 1312951893184288, guid: 68f68340d004845b1b0a1ace895aa64d, type: 3}
+  - {fileID: 1759002711901290, guid: a756bb40ca54c524dbbc9cb9214128a7, type: 3}
   roomGridX: 0
   roomGridY: 0
