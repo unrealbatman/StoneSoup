@@ -525,7 +525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 758a57905b6d04cfcbaa98647f8d1c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PostProcessMat: {fileID: 2100000, guid: 08b5e9cfed9eb4eac805c506fcf95295, type: 2}
+  PostProcessMat: {fileID: 2100000, guid: a401620c75a8540fea1a8239b58cbd2b, type: 2}
 --- !u!1 &722801499
 GameObject:
   m_ObjectHideFlags: 0
