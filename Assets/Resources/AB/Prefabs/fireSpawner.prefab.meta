@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Resources/AB/Prefabs/fireSpawner.prefab.meta
+guid: 779ba73c3ed084f3a82e5d2716dc264a
+timeCreated: 1521939011
+licenseType: Free
+========
+guid: 08b5e9cfed9eb4eac805c506fcf95295
+>>>>>>>> main:Assets/Resources/Jack/Materials/PostProcessMat.mat.meta
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
