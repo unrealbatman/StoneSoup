@@ -103,8 +103,12 @@ public class apt283Rock : Tile {
 			transform.localRotation = Quaternion.Euler(0, 0, aimAngle);
 		}
 		else {
-			_sprite.transform.localPosition = Vector3.zero;
-		}
+			if (_sprite != null)
+			{
+                _sprite.transform.localPosition = Vector3.zero;
+
+            }
+        }
 
 
 		updateSpriteSorting();

@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7860044034443981996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8055493249278891593}
+  - component: {fileID: 3392730383986064961}
+  m_Layer: 0
+  m_Name: room_doors
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8055493249278891593
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7860044034443981996}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3392730383986064961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7860044034443981996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9fda1be0f47f4d2eb0cd4977c7295a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomAuthor: Jack
+  designedRoomFile: {fileID: 4900000, guid: 1e6ee61471872404a83af6bf625f429d, type: 3}
+  localTilePrefabs:
+  - {fileID: 1312951893184288, guid: 540863f8bbab0449ab7ee3f56920289b, type: 3}
+  - {fileID: 1312951893184288, guid: e2e0d88db04744bd4b84e7287936f5c1, type: 3}
+  - {fileID: 1312951893184288, guid: 66c4df81bad0d41bbace0cc563c75c84, type: 3}
+  roomGridX: 0
+  roomGridY: 0

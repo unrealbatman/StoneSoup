@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Tile
   - Exit
+  - Pinball
   layers:
   - Default
   - TransparentFX

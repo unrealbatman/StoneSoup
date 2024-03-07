@@ -12,5 +12,6 @@ public class RandomChoiceRoom : Room {
 	public override Room createRoom(ExitConstraint requiredExits) {
 		GameObject roomPrefab = GlobalFuncs.randElem(roomChoices);
 		return roomPrefab.GetComponent<Room>().createRoom(requiredExits);
+		
 	}
 }
