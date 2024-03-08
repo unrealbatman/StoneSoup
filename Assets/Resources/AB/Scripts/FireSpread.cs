@@ -10,6 +10,7 @@ public class FireSpread : MonoBehaviour
     public GameObject fire;
     public float spreadDelay = 0.1f;
     private List<Vector2> burnedPositions = new List<Vector2>();
+    private int maxDepth = 2;
 
     void Start()
     { 
@@ -42,6 +43,15 @@ public class FireSpread : MonoBehaviour
             yield return new WaitForSeconds(spreadDelay);
         }
     }
+
+    //recursion
+    //private IEnumerator SpreadFire(Vector2 startPoint, int depth)
+    //{
+    //    if (depth > maxDepth) yield break;
+
+    //    SearchSurroundingArea(startPoint.x, startPoint.y, depth);
+    //    yield return new WaitForSeconds(spreadDelay);
+    //}
     private void SpawnFire(Vector2 pos)
     {
         print("Fire");
@@ -54,13 +64,13 @@ public class FireSpread : MonoBehaviour
         for (int i = -1; i <= 1; i++)
         {
             for (int j = -1; j <= 1; j++)
-            {                
+            {
                 if (i == 0 && j == 0) continue; // Skip the current tile
 
                 float newX = x + i;
                 float newY = y + j;
                 //Debug.Log("hah" + newX + " "+newY + "   a " + LevelGenerator.ROOM_WIDTH);
-                if (newX >= 0 && newX < LevelGenerator.ROOM_WIDTH *10 && newY >= 0 && newY < LevelGenerator.ROOM_HEIGHT*10)
+                if (newX >= 0 && newX < LevelGenerator.ROOM_WIDTH * 10 && newY >= 0 && newY < LevelGenerator.ROOM_HEIGHT * 10)
                 {
                     Vector2 newPos = new Vector2(newX, newY);
                     //Debug.Log(Tile.tileAtPoint(newPos, TileTags.Wall));
@@ -73,4 +83,30 @@ public class FireSpread : MonoBehaviour
             }
         }
     }
+
+    //private void SearchSurroundingArea(float x, float y, int depth)
+    //{
+    //    for (int i = -1; i <= 1; i++)
+    //    {
+    //        for (int j = -1; j <= 1; j++)
+    //        {
+    //            if (i == 0 && j == 0) continue; // Skip the current tile
+
+    //            float newX = x + i;
+    //            float newY = y + j;
+
+    //            if (newX >= 0 && newX < LevelGenerator.ROOM_WIDTH * 10 && newY >= 0 && newY < LevelGenerator.ROOM_HEIGHT * 10)
+    //            {
+    //                Vector2 newPos = new Vector2(newX, newY);
+
+    //                if (Tile.tileAtPoint(newPos, TileTags.Wall) == null && !burnedPositions.Contains(newPos))
+    //                {
+    //                    SpawnFire(newPos);
+    //                    //StartCoroutine(SpreadFire(newPos));
+    //                    StartCoroutine(SpreadFire(newPos, depth + 1));
+    //                }
+    //            }
+    //        }
+    //    }
+    //}
 }
