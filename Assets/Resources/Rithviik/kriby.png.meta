@@ -132,12 +132,12 @@ TextureImporter:
       name: kriby_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 106
-        height: 120
+        x: 10
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -153,12 +153,12 @@ TextureImporter:
       name: kriby_1
       rect:
         serializedVersion: 2
-        x: 106
-        y: 0
-        width: 106
-        height: 120
+        x: 115
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -174,12 +174,12 @@ TextureImporter:
       name: kriby_2
       rect:
         serializedVersion: 2
-        x: 212
-        y: 0
-        width: 106
-        height: 120
+        x: 220
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -195,12 +195,12 @@ TextureImporter:
       name: kriby_3
       rect:
         serializedVersion: 2
-        x: 318
-        y: 0
-        width: 106
-        height: 120
+        x: 325
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -216,12 +216,12 @@ TextureImporter:
       name: kriby_4
       rect:
         serializedVersion: 2
-        x: 424
-        y: 0
-        width: 106
-        height: 120
+        x: 430
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -237,12 +237,12 @@ TextureImporter:
       name: kriby_5
       rect:
         serializedVersion: 2
-        x: 530
-        y: 0
-        width: 106
-        height: 120
+        x: 535
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -258,12 +258,12 @@ TextureImporter:
       name: kriby_6
       rect:
         serializedVersion: 2
-        x: 636
-        y: 0
-        width: 106
-        height: 120
+        x: 640
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -279,12 +279,12 @@ TextureImporter:
       name: kriby_7
       rect:
         serializedVersion: 2
-        x: 742
-        y: 0
-        width: 106
-        height: 120
+        x: 745
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -300,12 +300,12 @@ TextureImporter:
       name: kriby_8
       rect:
         serializedVersion: 2
-        x: 848
-        y: 0
-        width: 106
-        height: 120
+        x: 850
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -321,12 +321,12 @@ TextureImporter:
       name: kriby_9
       rect:
         serializedVersion: 2
-        x: 954
-        y: 0
-        width: 106
-        height: 120
+        x: 955
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -343,11 +343,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1060
-        y: 0
-        width: 106
-        height: 120
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -363,12 +363,12 @@ TextureImporter:
       name: kriby_11
       rect:
         serializedVersion: 2
-        x: 1166
-        y: 0
-        width: 106
-        height: 120
+        x: 1165
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -384,12 +384,12 @@ TextureImporter:
       name: kriby_12
       rect:
         serializedVersion: 2
-        x: 1272
-        y: 0
-        width: 106
-        height: 120
+        x: 1270
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -405,12 +405,12 @@ TextureImporter:
       name: kriby_13
       rect:
         serializedVersion: 2
-        x: 1378
-        y: 0
-        width: 106
-        height: 120
+        x: 1375
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -426,12 +426,12 @@ TextureImporter:
       name: kriby_14
       rect:
         serializedVersion: 2
-        x: 1484
-        y: 0
-        width: 106
-        height: 120
+        x: 1480
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -447,12 +447,12 @@ TextureImporter:
       name: kriby_15
       rect:
         serializedVersion: 2
-        x: 1590
-        y: 0
-        width: 106
-        height: 120
+        x: 1585
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -468,12 +468,12 @@ TextureImporter:
       name: kriby_16
       rect:
         serializedVersion: 2
-        x: 1696
-        y: 0
-        width: 106
-        height: 120
+        x: 1690
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -489,12 +489,12 @@ TextureImporter:
       name: kriby_17
       rect:
         serializedVersion: 2
-        x: 1802
-        y: 0
-        width: 106
-        height: 120
+        x: 1795
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -510,12 +510,12 @@ TextureImporter:
       name: kriby_18
       rect:
         serializedVersion: 2
-        x: 1908
-        y: 0
-        width: 106
-        height: 120
+        x: 1900
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -531,12 +531,12 @@ TextureImporter:
       name: kriby_19
       rect:
         serializedVersion: 2
-        x: 2014
-        y: 0
-        width: 106
-        height: 120
+        x: 2005
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -552,12 +552,12 @@ TextureImporter:
       name: kriby_20
       rect:
         serializedVersion: 2
-        x: 2120
-        y: 0
-        width: 106
-        height: 120
+        x: 2110
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -573,12 +573,12 @@ TextureImporter:
       name: kriby_21
       rect:
         serializedVersion: 2
-        x: 2226
-        y: 0
-        width: 106
-        height: 120
+        x: 2215
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -594,12 +594,12 @@ TextureImporter:
       name: kriby_22
       rect:
         serializedVersion: 2
-        x: 2332
-        y: 0
-        width: 106
-        height: 120
+        x: 2320
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -615,12 +615,12 @@ TextureImporter:
       name: kriby_23
       rect:
         serializedVersion: 2
-        x: 2438
-        y: 0
-        width: 106
-        height: 120
+        x: 2425
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -636,12 +636,12 @@ TextureImporter:
       name: kriby_24
       rect:
         serializedVersion: 2
-        x: 2544
-        y: 0
-        width: 106
-        height: 120
+        x: 2530
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -657,12 +657,12 @@ TextureImporter:
       name: kriby_25
       rect:
         serializedVersion: 2
-        x: 2650
-        y: 0
-        width: 106
-        height: 120
+        x: 2635
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -678,12 +678,12 @@ TextureImporter:
       name: kriby_26
       rect:
         serializedVersion: 2
-        x: 2756
-        y: 0
-        width: 106
-        height: 120
+        x: 2740
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -699,12 +699,12 @@ TextureImporter:
       name: kriby_27
       rect:
         serializedVersion: 2
-        x: 2862
-        y: 0
-        width: 106
-        height: 120
+        x: 2845
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -720,12 +720,12 @@ TextureImporter:
       name: kriby_28
       rect:
         serializedVersion: 2
-        x: 2968
-        y: 0
-        width: 106
-        height: 120
+        x: 2950
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -741,12 +741,12 @@ TextureImporter:
       name: kriby_29
       rect:
         serializedVersion: 2
-        x: 3074
-        y: 0
-        width: 106
-        height: 120
+        x: 3055
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -762,12 +762,12 @@ TextureImporter:
       name: kriby_30
       rect:
         serializedVersion: 2
-        x: 3180
-        y: 0
-        width: 106
-        height: 120
+        x: 3160
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -783,12 +783,12 @@ TextureImporter:
       name: kriby_31
       rect:
         serializedVersion: 2
-        x: 3286
-        y: 0
-        width: 106
-        height: 120
+        x: 3265
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -804,12 +804,12 @@ TextureImporter:
       name: kriby_32
       rect:
         serializedVersion: 2
-        x: 3392
-        y: 0
-        width: 106
-        height: 120
+        x: 3370
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -825,12 +825,12 @@ TextureImporter:
       name: kriby_33
       rect:
         serializedVersion: 2
-        x: 3498
-        y: 0
-        width: 106
-        height: 120
+        x: 3475
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -846,12 +846,12 @@ TextureImporter:
       name: kriby_34
       rect:
         serializedVersion: 2
-        x: 3604
-        y: 0
-        width: 106
-        height: 120
+        x: 3580
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -867,12 +867,12 @@ TextureImporter:
       name: kriby_35
       rect:
         serializedVersion: 2
-        x: 3710
-        y: 0
-        width: 106
-        height: 120
+        x: 3685
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -888,12 +888,12 @@ TextureImporter:
       name: kriby_36
       rect:
         serializedVersion: 2
-        x: 3816
-        y: 0
-        width: 106
-        height: 120
+        x: 3790
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -909,12 +909,12 @@ TextureImporter:
       name: kriby_37
       rect:
         serializedVersion: 2
-        x: 3922
-        y: 0
-        width: 106
-        height: 120
+        x: 3895
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -930,12 +930,12 @@ TextureImporter:
       name: kriby_38
       rect:
         serializedVersion: 2
-        x: 4028
-        y: 0
-        width: 106
-        height: 120
+        x: 4000
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -951,12 +951,12 @@ TextureImporter:
       name: kriby_39
       rect:
         serializedVersion: 2
-        x: 4134
-        y: 0
-        width: 106
-        height: 120
+        x: 4105
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -972,12 +972,12 @@ TextureImporter:
       name: kriby_40
       rect:
         serializedVersion: 2
-        x: 4240
-        y: 0
-        width: 106
-        height: 120
+        x: 4210
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -993,12 +993,12 @@ TextureImporter:
       name: kriby_41
       rect:
         serializedVersion: 2
-        x: 4346
-        y: 0
-        width: 106
-        height: 120
+        x: 4315
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1014,12 +1014,12 @@ TextureImporter:
       name: kriby_42
       rect:
         serializedVersion: 2
-        x: 4452
-        y: 0
-        width: 106
-        height: 120
+        x: 4420
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1035,12 +1035,12 @@ TextureImporter:
       name: kriby_43
       rect:
         serializedVersion: 2
-        x: 4558
-        y: 0
-        width: 106
-        height: 120
+        x: 4525
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1056,12 +1056,12 @@ TextureImporter:
       name: kriby_44
       rect:
         serializedVersion: 2
-        x: 4664
-        y: 0
-        width: 106
-        height: 120
+        x: 4630
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1077,12 +1077,12 @@ TextureImporter:
       name: kriby_45
       rect:
         serializedVersion: 2
-        x: 4770
-        y: 0
-        width: 106
-        height: 120
+        x: 4735
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1098,12 +1098,12 @@ TextureImporter:
       name: kriby_46
       rect:
         serializedVersion: 2
-        x: 4876
-        y: 0
-        width: 106
-        height: 120
+        x: 4840
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1119,12 +1119,12 @@ TextureImporter:
       name: kriby_47
       rect:
         serializedVersion: 2
-        x: 4982
-        y: 0
-        width: 106
-        height: 120
+        x: 4945
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1140,12 +1140,12 @@ TextureImporter:
       name: kriby_48
       rect:
         serializedVersion: 2
-        x: 5088
-        y: 0
-        width: 106
-        height: 120
+        x: 5050
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1161,12 +1161,12 @@ TextureImporter:
       name: kriby_49
       rect:
         serializedVersion: 2
-        x: 5194
-        y: 0
-        width: 106
-        height: 120
+        x: 5155
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1182,12 +1182,12 @@ TextureImporter:
       name: kriby_50
       rect:
         serializedVersion: 2
-        x: 5300
-        y: 0
-        width: 106
-        height: 120
+        x: 5260
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1203,12 +1203,12 @@ TextureImporter:
       name: kriby_51
       rect:
         serializedVersion: 2
-        x: 5406
-        y: 0
-        width: 106
-        height: 120
+        x: 5365
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1224,12 +1224,12 @@ TextureImporter:
       name: kriby_52
       rect:
         serializedVersion: 2
-        x: 5512
-        y: 0
-        width: 106
-        height: 120
+        x: 5470
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1245,12 +1245,12 @@ TextureImporter:
       name: kriby_53
       rect:
         serializedVersion: 2
-        x: 5618
-        y: 0
-        width: 106
-        height: 120
+        x: 5575
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1266,12 +1266,12 @@ TextureImporter:
       name: kriby_54
       rect:
         serializedVersion: 2
-        x: 5724
-        y: 0
-        width: 106
-        height: 120
+        x: 5680
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1287,12 +1287,12 @@ TextureImporter:
       name: kriby_55
       rect:
         serializedVersion: 2
-        x: 5830
-        y: 0
-        width: 106
-        height: 120
+        x: 5785
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1308,12 +1308,12 @@ TextureImporter:
       name: kriby_56
       rect:
         serializedVersion: 2
-        x: 5936
-        y: 0
-        width: 106
-        height: 120
+        x: 5890
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1329,12 +1329,12 @@ TextureImporter:
       name: kriby_57
       rect:
         serializedVersion: 2
-        x: 6042
-        y: 0
-        width: 106
-        height: 120
+        x: 5995
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1350,12 +1350,12 @@ TextureImporter:
       name: kriby_58
       rect:
         serializedVersion: 2
-        x: 6148
-        y: 0
-        width: 106
-        height: 120
+        x: 6100
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1371,12 +1371,12 @@ TextureImporter:
       name: kriby_59
       rect:
         serializedVersion: 2
-        x: 6254
-        y: 0
-        width: 106
-        height: 120
+        x: 6205
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1392,12 +1392,12 @@ TextureImporter:
       name: kriby_60
       rect:
         serializedVersion: 2
-        x: 6360
-        y: 0
-        width: 106
-        height: 120
+        x: 6310
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1413,12 +1413,12 @@ TextureImporter:
       name: kriby_61
       rect:
         serializedVersion: 2
-        x: 6466
-        y: 0
-        width: 106
-        height: 120
+        x: 6415
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1434,12 +1434,12 @@ TextureImporter:
       name: kriby_62
       rect:
         serializedVersion: 2
-        x: 6572
-        y: 0
-        width: 106
-        height: 120
+        x: 6520
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1455,12 +1455,12 @@ TextureImporter:
       name: kriby_63
       rect:
         serializedVersion: 2
-        x: 6678
-        y: 0
-        width: 106
-        height: 120
+        x: 6625
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1476,12 +1476,12 @@ TextureImporter:
       name: kriby_64
       rect:
         serializedVersion: 2
-        x: 6784
-        y: 0
-        width: 106
-        height: 120
+        x: 6730
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1497,12 +1497,12 @@ TextureImporter:
       name: kriby_65
       rect:
         serializedVersion: 2
-        x: 6890
-        y: 0
-        width: 106
-        height: 120
+        x: 6835
+        y: 15
+        width: 85.84849
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

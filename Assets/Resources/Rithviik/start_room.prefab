@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9fda1be0f47f4d2eb0cd4977c7295a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomAuthor: AP Thomson
+  roomAuthor: Rithviik
   designedRoomFile: {fileID: 4900000, guid: 1d7da88071c43e944846ea7ccc463135, type: 3}
   localTilePrefabs:
   - {fileID: 1224687453642000, guid: bba9de82886db444980f5c22f285e992, type: 3}
