@@ -7,7 +7,7 @@ using UnityEngine;
 public class PostProcess : MonoBehaviour
 {
 	public Material PostProcessMat;
-	List<GameObject> ligos;
+	[HideInInspector] public List<GameObject> lightObjects;
 	public List<LightSrc> srcs;
 
 	ComputeBuffer lights;
@@ -15,12 +15,14 @@ public class PostProcess : MonoBehaviour
 	private void Start()
 	{
 		srcs = new List<LightSrc>();
-		ligos = GameObject.FindGameObjectsWithTag("Light").ToList();
-		ligos.Add(Player.instance.gameObject);
- 	}
+		lightObjects = new List<GameObject>();
+		lightObjects = GameObject.FindGameObjectsWithTag("Light").ToList();
+		lightObjects.Add(Player.instance.gameObject);
+        lights = new ComputeBuffer(1, 12); //4 bytes + 8 bytes
+    }
 	void UpdateLightBuffer() {
 		srcs.Clear();
-		foreach (GameObject go in ligos)
+		foreach (GameObject go in lightObjects)
 		{
 			if (go == null) continue;
 			LightSrc src = new LightSrc();
@@ -33,6 +35,7 @@ public class PostProcess : MonoBehaviour
 
 			srcs.Add(src);
 		}
+		lights.Release();
 		lights = new ComputeBuffer(srcs.Count, 12); //4 bytes + 8 bytes
 		lights.SetData(srcs);
     }

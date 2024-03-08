@@ -17,7 +17,8 @@ public class Jack_fire : Tile
 	{
 		timeAtSpawn = Time.time;
 		onFire = new List<Tile>();
-		CalculateLifeTime(); 
+		CalculateLifeTime();
+		Camera.main.GetComponent<PostProcess>().lightObjects.Add(gameObject);
 	}
 	//used for reseting after spawn;
 	public void CalculateLifeTime() {
@@ -49,6 +50,11 @@ public class Jack_fire : Tile
 			}
 			toClear.Clear();
 		}
+	}
+	protected override void die()
+	{
+		Camera.main.GetComponent<PostProcess>().lightObjects.Remove(gameObject);
+		base.die();
 	}
 
 	private void OnTriggerEnter2D(Collider2D collision)
