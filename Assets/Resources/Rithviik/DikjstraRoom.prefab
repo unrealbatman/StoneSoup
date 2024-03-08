@@ -68,3 +68,6 @@ MonoBehaviour:
   maxNumEnemies: 4
   minNumExplosives: 2
   maxNumExplosives: 5
+  possibleSpawnPositions: []
+  isFurthest: 0
+  keyPrefab: {fileID: 1753806526501684, guid: afcdda856952e4ebea341cde930fc002, type: 3}

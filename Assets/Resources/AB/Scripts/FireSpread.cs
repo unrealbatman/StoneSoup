@@ -28,7 +28,7 @@ public class FireSpread : MonoBehaviour
 
         StartCoroutine(SpreadFire(StartPoint));
 
-        print("start fire");
+        //print("start fire");
     }
 
     private IEnumerator SpreadFire(Vector2 startPoint)
@@ -54,7 +54,7 @@ public class FireSpread : MonoBehaviour
     //}
     private void SpawnFire(Vector2 pos)
     {
-        print("Fire");
+        //print("Fire");
         Instantiate(fire, pos, Quaternion.identity);
         burnedPositions.Add(pos);
     }

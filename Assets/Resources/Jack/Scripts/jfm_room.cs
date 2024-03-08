@@ -67,7 +67,7 @@ public class jfm_room : Room
 				if (wallMap[pos.x, pos.y])
 				{
 					if(Random.value < 0.3) {
-						Debug.Log("spawning door!");
+						//Debug.Log("spawning door!");
 						indexGrid[criticalPath[index].x, criticalPath[index].y] = 5;
 						break;
 					}
@@ -98,7 +98,7 @@ public class jfm_room : Room
 			{
 				//only doors in the way
 				if (criticalPath.Contains(new Vector2Int(i, j))) {
-					Debug.Log(indexGrid[i, j]);
+					//Debug.Log(indexGrid[i, j]);
 					if (indexGrid[i, j] != 5)
 					{
 						continue;

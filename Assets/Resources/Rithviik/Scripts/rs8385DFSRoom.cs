@@ -16,6 +16,9 @@ public class rs8385DFSRoom : rs8385DFS
     public int minNumExplosives = 2, maxNumExplosives = 5;
     private List<Vector2> deadEnds = new List<Vector2>(); // List to store teleports
 
+    public List<Vector2> possibleSpawnPositions = new List<Vector2>();
+    public bool isFurthest = false;
+    public GameObject keyPrefab;
     public override void fillRoom(LevelGenerator ourGenerator, ExitConstraint requiredExits)
     {
         base.fillRoom(ourGenerator, requiredExits);
@@ -53,8 +56,38 @@ public class rs8385DFSRoom : rs8385DFS
         {
             spawnTiles(prefab, getCountForPrefab(prefab), requiredExits);
         }
+
+        if (isFurthest)
+        {
+            spawnTiles(keyPrefab, 1, requiredExits);
+
+        }
     }
 
+
+    private void Update()
+    {
+        if (isFurthest)
+        {
+
+
+            Vector2 spawnPos = GlobalFuncs.randElem(possibleSpawnPositions);
+
+            // Ensure the position is not occupied before spawning
+            if (!IsPositionOccupied(spawnPos))
+            {
+                Tile.spawnTile(keyPrefab, transform, (int)spawnPos.x, (int)spawnPos.y);
+
+                // Add the position to the list of occupied positions
+                AddOccupiedPosition(spawnPos);
+            }
+
+            possibleSpawnPositions.Remove(spawnPos);
+            isFurthest = false;
+        }
+
+
+    }
     private void checkDeadEnd(GameObject prefab, int count, ExitConstraint requiredExits)
     {
         foreach (SearchVertex vertex in _closed)
@@ -89,7 +122,7 @@ public class rs8385DFSRoom : rs8385DFS
 
     private void spawnTiles(GameObject prefab, int count, ExitConstraint requiredExits)
     {
-        List<Vector2> possibleSpawnPositions = getUnoccupiedPositions();
+       possibleSpawnPositions = getUnoccupiedPositions(possibleSpawnPositions);
 
         if (prefab == teleportalPrefab)
         {
@@ -139,10 +172,9 @@ public class rs8385DFSRoom : rs8385DFS
 
 
     // Method to get unoccupied positions in the room, excluding walls
-    private List<Vector2> getUnoccupiedPositions()
+    public List<Vector2> getUnoccupiedPositions(List<Vector2> possibleSpawnPositions)
     {
-        List<Vector2> possibleSpawnPositions = new List<Vector2>();
-
+      
         for (int x = 1; x < LevelGenerator.ROOM_WIDTH - 1; x++)
         {
             for (int y = 1; y < LevelGenerator.ROOM_HEIGHT - 1; y++)

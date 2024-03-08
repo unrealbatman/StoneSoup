@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class rs8385BFSRoom : rs8385BFS
@@ -15,7 +16,12 @@ public class rs8385BFSRoom : rs8385BFS
     public int minNumEnemies = 3, maxNumEnemies = 5;
     public int minNumExplosives = 2, maxNumExplosives = 5;
     private List<Vector2> deadEnds = new List<Vector2>(); // List to store teleports
+    public List<Vector2> possibleSpawnPositions = new List<Vector2>();
 
+    
+
+    public bool isFurthest = false;
+    public GameObject keyPrefab;
     public override void fillRoom(LevelGenerator ourGenerator, ExitConstraint requiredExits)
     {
         base.fillRoom(ourGenerator, requiredExits);
@@ -53,7 +59,16 @@ public class rs8385BFSRoom : rs8385BFS
         {
             spawnTiles(prefab, getCountForPrefab(prefab), requiredExits);
         }
+
+        if(isFurthest)
+        {
+            spawnTiles(keyPrefab, 1, requiredExits);
+
+        }
     }
+
+
+
 
     private void checkDeadEnd(GameObject prefab, int count, ExitConstraint requiredExits)
     {
@@ -89,8 +104,9 @@ public class rs8385BFSRoom : rs8385BFS
 
     private void spawnTiles(GameObject prefab, int count, ExitConstraint requiredExits)
     {
-        List<Vector2> possibleSpawnPositions = getUnoccupiedPositions();
+         possibleSpawnPositions = getUnoccupiedPositions(possibleSpawnPositions);
 
+       
         if (prefab == teleportalPrefab)
         {
             // Only spawn teleports in dead ends
@@ -128,6 +144,8 @@ public class rs8385BFSRoom : rs8385BFS
                 {
                     Tile.spawnTile(prefab, transform, (int)spawnPos.x, (int)spawnPos.y);
 
+
+
                     // Add the position to the list of occupied positions
                     AddOccupiedPosition(spawnPos);
                 }
@@ -139,9 +157,8 @@ public class rs8385BFSRoom : rs8385BFS
 
 
     // Method to get unoccupied positions in the room, excluding walls
-    private List<Vector2> getUnoccupiedPositions()
+    private List<Vector2> getUnoccupiedPositions(List<Vector2> possibleSpawnPositions)
     {
-        List<Vector2> possibleSpawnPositions = new List<Vector2>();
 
         for (int x = 1; x < LevelGenerator.ROOM_WIDTH - 1; x++)
         {
@@ -191,5 +208,31 @@ private int getCountForPrefab(GameObject prefab)
 
     return 0; // Default case (should not happen if prefabs are correctly set up)
 }
+
+
+    private void Update()
+    {
+        if (isFurthest)
+        {
+
+
+            Vector2 spawnPos = GlobalFuncs.randElem(possibleSpawnPositions);
+
+            // Ensure the position is not occupied before spawning
+            if (!IsPositionOccupied(spawnPos))
+            {
+                Tile.spawnTile(keyPrefab, transform, (int)spawnPos.x, (int)spawnPos.y);
+
+                // Add the position to the list of occupied positions
+                AddOccupiedPosition(spawnPos);
+            }
+
+            possibleSpawnPositions.Remove(spawnPos);
+            isFurthest = false;
+        }
+
+
+    }
+
 
 }
