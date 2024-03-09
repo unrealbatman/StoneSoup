@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 212786888573611460}
   - component: {fileID: 61756950755725140}
   - component: {fileID: 252354866520941577}
+  - component: {fileID: -4454644634714037076}
   m_Layer: 0
   m_Name: Boss_Door
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,15 +76,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 266eb138d92fd954bbd83a7e3a1420f2, type: 3}
+  m_Sprite: {fileID: 1663997003, guid: 98f1f87f87999b543b4fbb6be200f380, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.86164033, y: 0.90000004}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &61756950755725140
@@ -103,8 +104,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 69.97868, y: 10.9}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 0.86164033, y: 0.90000004}
+    newSize: {x: 0.86164033, y: 0.90000004}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -124,6 +125,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4a4849c87af64e718a3317af681392d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ExitPoint: {x: 0, y: 0}
   StartPoint: {x: 0, y: 0}
   fire: {fileID: 1387771116485768, guid: dc649760b66cc4987922c0d808c08df1, type: 3}
+  spreadDelay: 0.1
+--- !u!114 &-4454644634714037076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759002711901290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa4e4c2cd8834b37819349de3d5f41b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags: 0
+  tileName: 
+  health: 1
+  deathEffect: {fileID: 0}
+  deathSFX: {fileID: 0}
+  heldOffset: {x: 0.2, y: -0.1}
+  heldAngle: 0
+  tileWereHolding: {fileID: 0}
+  aimDirection: {x: 0, y: 0}
