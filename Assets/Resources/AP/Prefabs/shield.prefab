@@ -234,12 +234,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312951893184288}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a4a4849c87af64e718a3317af681392d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ExitPoint: {x: 0, y: 0}
   StartPoint: {x: 0, y: 0}
   fire: {fileID: 1387771116485768, guid: dc649760b66cc4987922c0d808c08df1, type: 3}
   spreadDelay: 0.5
