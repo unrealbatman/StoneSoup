@@ -110,7 +110,9 @@ public class rs8385KeySpawner : MonoBehaviour
                 Debug.Log("Dikjstra Unoccupied: " + UnoccupiedPositions.Count);
                 room.GetComponent<rs8385DikjstraRoom>().isFurthest = true;
 
-            }
+            }else if(room is jfm_room) {
+                (room as jfm_room).SpawnRSKey();
+	        }
             //UnoccupiedPositions[Random.Range(0, UnoccupiedPositions.Count - 1)]
             // Spawn the key in the specified room
             //GameObject key = Instantiate(keyPrefab, room.transform.position, Quaternion.identity);

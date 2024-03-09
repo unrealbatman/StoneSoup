@@ -5,13 +5,38 @@ using UnityEngine;
 public class jfm_room : Room
 {
 	public Vector2 perlinFreq;
+
+	List<Vector2Int> criticalPath;
+	int[,] indexGrid;
+
+	public GameObject keyPrefab;
+	bool hasSpawnedKey;
+
+	public void SpawnRSKey() {
+		if (hasSpawnedKey) return;
+		for(int i =0; i < criticalPath.Count; i++) {
+			if (indexGrid[criticalPath[i].x, criticalPath[i].y] == 0) {
+				Tile.spawnTile(keyPrefab, transform, criticalPath[i].x, criticalPath[i].y);
+				hasSpawnedKey = true;
+				return;
+			}
+		}
+    }
+
 	public override void fillRoom(LevelGenerator ourGenerator, ExitConstraint requiredExits)
 	{
+		bool hasExit = false;
+		foreach (Vector2Int ex in requiredExits.requiredExitLocations()) {
+			hasExit = true;
+		}
+		if (!hasExit) {
+			requiredExits = new ExitConstraint(false, true, true, true);
+		}
 		int height = LevelGenerator.ROOM_HEIGHT;
 		int width = LevelGenerator.ROOM_WIDTH;
 
 		bool[,] wallMap = new bool[width, height];
-		int[,] indexGrid = new int[width, height];
+		indexGrid = new int[width, height];
 
 		// Start completely filled with walls. 
 		Vector2 RandomPerlinPoint = Random.insideUnitCircle * Random.Range(-1000, 1000);
@@ -33,7 +58,7 @@ public class jfm_room : Room
 
 		bool foundStartPos = false;
 		Vector2 startPos = new Vector2(Random.Range(0, LevelGenerator.ROOM_WIDTH), Random.Range(0, LevelGenerator.ROOM_HEIGHT));
-		List<Vector2Int> criticalPath = new();
+		criticalPath = new();
 
 		foreach (Vector2Int exitLocation in requiredExits.requiredExitLocations())
 		{
@@ -71,7 +96,6 @@ public class jfm_room : Room
 						indexGrid[criticalPath[index].x, criticalPath[index].y] = 5;
 						break;
 					}
-
 				}
 			}
 			pos = criticalPath[index] + Vector2Int.right;
@@ -118,10 +142,10 @@ public class jfm_room : Room
 				else if(tileIndex == 0) {
 					if (Mathf.PerlinNoise(perlinFreq.x * i + RandomPerlinPoint.x, perlinFreq.y * j + RandomPerlinPoint.y) < 0.45f)
 					{
-						if(Random.value < 0.1) {
-							tileIndex = 6; // key!
-						}
-						else if(Random.value < 0.1)
+						//if(Random.value < 0.1) {
+						//	tileIndex = 6; // key!
+						//}
+						if(Random.value < 0.1)
 						{
 							tileIndex = 7; // molly
 						}

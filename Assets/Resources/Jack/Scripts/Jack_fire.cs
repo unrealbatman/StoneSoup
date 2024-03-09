@@ -63,6 +63,7 @@ public class Jack_fire : Tile
 		if (collision.gameObject.GetComponent<Tile>() != null)
 		{
 			Tile otherTile = collision.gameObject.GetComponent<Tile>();
+			if (otherTile is Jack_fire) return;
 			onFire.Add(otherTile);
 			otherTile.takeDamage(this, 1, DamageType.Normal);
 		}
