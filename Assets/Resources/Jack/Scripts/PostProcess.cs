@@ -22,7 +22,7 @@ public class PostProcess : MonoBehaviour
 			lightObjects.Add(obj);
 		}
 		lightObjects.Add(Player.instance.gameObject);
-        lights = new ComputeBuffer(1, 12); //4 bytes + 8 bytes
+        lights = new ComputeBuffer(1, 24); //4 bytes + 8 bytes + 12;
     }
 	void UpdateLightBuffer() {
 		srcs.Clear();
@@ -33,6 +33,10 @@ public class PostProcess : MonoBehaviour
 			Vector2 pix = Camera.main.WorldToScreenPoint(go.transform.position);
 			src.screen_position = new Vector2(pix.x / Camera.main.pixelWidth, pix.y / Camera.main.pixelHeight);
 			src.intensity = 0.1f;
+			src.glowColor = Vector3.one;
+			if(go.TryGetComponent(out GlowEffect glo)) {
+				src.glowColor = new Vector3(glo.tint.r, glo.tint.g, glo.tint.b);
+			}
 			if (go.CompareTag("Player")){
 				src.intensity = 1f;
 			}
@@ -44,7 +48,7 @@ public class PostProcess : MonoBehaviour
             srcs.Add(src);
 		}
 		lights.Release();
-		lights = new ComputeBuffer(srcs.Count, 12); //4 bytes + 8 bytes
+		lights = new ComputeBuffer(srcs.Count, 24); //4 bytes + 8 bytes + 12;
 		lights.SetData(srcs);
     }
 
@@ -60,4 +64,5 @@ public class PostProcess : MonoBehaviour
 public struct LightSrc {
 	public Vector2 screen_position;
 	public float intensity;
+	public Vector3 glowColor;
 }
