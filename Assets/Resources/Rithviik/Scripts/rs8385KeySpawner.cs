@@ -85,20 +85,20 @@ public class rs8385KeySpawner : MonoBehaviour
         List<Vector2> UnoccupiedPositions= new List<Vector2>();
         if (room != null)
         {
-            Debug.Log(room.GetType());
+           // Debug.Log(room.name);
             if (room.GetComponent<rs8385BFSRoom>() != null)
             {
                 UnoccupiedPositions = room.GetComponent<rs8385BFSRoom>().possibleSpawnPositions;
-                Debug.Log("BFS Unoccupied: "+ UnoccupiedPositions.Count);
+                //Debug.Log("BFS Unoccupied: "+ UnoccupiedPositions.Count);
                 room.GetComponent<rs8385BFSRoom>().isFurthest = true;
 
             }
             else if (room.GetComponent<rs8385DFSRoom>() != null)
             {
                 UnoccupiedPositions = room.GetComponent<rs8385DFSRoom>().possibleSpawnPositions;
-                Debug.Log(UnoccupiedPositions[10]);
+                //Debug.Log(UnoccupiedPositions[10]);
 
-                Debug.Log("DFS Unoccupied: " + UnoccupiedPositions.Count);
+               // Debug.Log("DFS Unoccupied: " + UnoccupiedPositions.Count);
                 room.GetComponent<rs8385DFSRoom>().isFurthest = true;
 
 
@@ -107,21 +107,24 @@ public class rs8385KeySpawner : MonoBehaviour
             {
                 UnoccupiedPositions = room.GetComponent<rs8385DikjstraRoom>().possibleSpawnPositions;
 
-                Debug.Log("Dikjstra Unoccupied: " + UnoccupiedPositions.Count);
+               // Debug.Log("Dikjstra Unoccupied: " + UnoccupiedPositions.Count);
                 room.GetComponent<rs8385DikjstraRoom>().isFurthest = true;
 
             }else if(room is jfm_room) {
                 (room as jfm_room).SpawnRSKey();
-	        }
-            //UnoccupiedPositions[Random.Range(0, UnoccupiedPositions.Count - 1)]
-            // Spawn the key in the specified room
-            //GameObject key = Instantiate(keyPrefab, room.transform.position, Quaternion.identity);
-            // Optionally, you can parent the key to the room if needed
-           // key.transform.parent = room.transform;
+	        }else if(room is rs8385ExitRoom)
+            {
+               (room as rs8385ExitRoom).isFurthest = true;
+            }
+           
+
         }
         else
         {
             Debug.LogWarning("No room found to spawn the key.");
         }
     }
+
+
+   
 }

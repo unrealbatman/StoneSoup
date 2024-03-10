@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 61756950755725140}
   - component: {fileID: 252354866520941577}
   - component: {fileID: -4454644634714037076}
+  - component: {fileID: 706377971939542018}
   m_Layer: 0
   m_Name: Boss_Door
   m_TagString: Light
@@ -138,6 +139,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fa4e4c2cd8834b37819349de3d5f41b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags: 0
+  tileName: 
+  health: 1
+  deathEffect: {fileID: 0}
+  deathSFX: {fileID: 0}
+  heldOffset: {x: 0.2, y: -0.1}
+  heldAngle: 0
+  tileWereHolding: {fileID: 0}
+  aimDirection: {x: 0, y: 0}
+--- !u!114 &706377971939542018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759002711901290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ebf18a18076f4931b797a592c8f67cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   tags: 0

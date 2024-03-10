@@ -10,13 +10,14 @@ public class jfm_room : Room
 	int[,] indexGrid;
 
 	public GameObject keyPrefab;
+	public GameObject treasureKeyPrefab;
 	bool hasSpawnedKey;
 
 	public void SpawnRSKey() {
 		if (hasSpawnedKey) return;
 		for(int i =0; i < criticalPath.Count; i++) {
 			if (indexGrid[criticalPath[i].x, criticalPath[i].y] == 0) {
-				Tile.spawnTile(keyPrefab, transform, criticalPath[i].x, criticalPath[i].y);
+				Tile.spawnTile(treasureKeyPrefab, transform, criticalPath[i].x, criticalPath[i].y);
 				hasSpawnedKey = true;
 				return;
 			}
@@ -108,7 +109,7 @@ public class jfm_room : Room
 				{
 					if (Random.value < 0.3)
 					{
-						Debug.Log("spawning door!");
+						//Debug.Log("spawning door!");
 						indexGrid[criticalPath[index].x, criticalPath[index].y] = 5;
 						break;
 					}

@@ -11,12 +11,16 @@ public class MultiBall : Tile
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<Tile>().hasTag(TileTags.Wall) && collision.gameObject.CompareTag("Pinball") && collision.gameObject!=null)
+
+        if(collision.gameObject.GetComponent<Tile>()!=null && collision.gameObject != null)
         {
-            triggered = true;
-            collObj = collision.gameObject;
-                
+            if (collision.gameObject.GetComponent<Tile>().hasTag(TileTags.Wall) && collision.gameObject.CompareTag("Pinball")) { 
+                triggered = true;
+                collObj = collision.gameObject;
+
+            }
         }
+       
     }
 
     private void Update()
