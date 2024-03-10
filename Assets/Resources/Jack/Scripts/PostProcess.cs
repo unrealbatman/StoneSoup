@@ -17,6 +17,10 @@ public class PostProcess : MonoBehaviour
 		srcs = new List<LightSrc>();
 		lightObjects = new List<GameObject>();
 		lightObjects = GameObject.FindGameObjectsWithTag("Light").ToList();
+		foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Pinball"))
+		{
+			lightObjects.Add(obj);
+		}
 		lightObjects.Add(Player.instance.gameObject);
         lights = new ComputeBuffer(1, 12); //4 bytes + 8 bytes
     }
@@ -32,8 +36,12 @@ public class PostProcess : MonoBehaviour
 			if (go.CompareTag("Player")){
 				src.intensity = 1f;
 			}
+            if (go.CompareTag("Pinball"))
+            {
+                src.intensity = 1f;
+            }
 
-			srcs.Add(src);
+            srcs.Add(src);
 		}
 		lights.Release();
 		lights = new ComputeBuffer(srcs.Count, 12); //4 bytes + 8 bytes
