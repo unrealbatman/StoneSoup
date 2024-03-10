@@ -24,6 +24,7 @@ Shader "Unlit/Lighting"
             {
 	            float2 position;
                 float intensity;
+                float3 color;
 	        };
 
             StructuredBuffer<LightSrc> lightBuffer;
@@ -60,14 +61,16 @@ Shader "Unlit/Lighting"
                 float2 uv = i.uv;
                 float light = 0;
                 float dist = 0;
+                float3 tint = 0;
                 for(int i =0; i < bufferSize; i++){
 		            dist = distance(uv, lightBuffer[i].position.xy); 
-                    light += 0.02 * (lightBuffer[i].intensity) * (1 / (dist * dist));
+                    float brit = 0.02 * (lightBuffer[i].intensity) * (1 / (dist * dist));
+                    tint += brit * lightBuffer[i].color;
 		        }
-                light = pow(light, 0.1);
-                light = min(1.3, light);
-                light = pow(light, 2.4);
-                col = camIn + (light.xxx * float3(0.7, 0.6, 0.5)) - 1.6;
+                tint = pow(tint, 0.1);
+                tint = min(1.3, tint);
+                tint = pow(tint, 2.4);
+                col = camIn + tint - 2;
                 return float4(col, 1);
             }
             ENDCG
