@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4561350303700290}
-  - component: {fileID: 114103883745807518}
+  - component: {fileID: 8814254495833874765}
+  - component: {fileID: -1645681636197037016}
   m_Layer: 0
   m_Name: room
   m_TagString: Untagged
@@ -32,7 +33,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114103883745807518
+--- !u!114 &8814254495833874765
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,14 +42,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 1896788399910994}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 294f5a475b8f7481a8f1bb007b2cacda, type: 3}
+  m_Script: {fileID: 11500000, guid: c24329d5618652b418d55b534ee4f8da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomAuthor: AP Thomson
+  roomAuthor: AB
   designedRoomFile: {fileID: 0}
   localTilePrefabs: []
   roomGridX: 0
   roomGridY: 0
-  roomChoices:
-  - {fileID: 1896788399910994, guid: 68386be56b84144d0a315076a6c26cb7, type: 3}
-  - {fileID: 1586512256608848, guid: a1691666aec4b4d7292e83a109496ae7, type: 3}
+  triggerBomb: {fileID: 1614338125090674, guid: 259cbf34c67c31943abf2b604493f113,
+    type: 3}
+  changeBomb: {fileID: 1614338125090674, guid: b7d43b9ca5ea08e4eabf929051790343, type: 3}
+  transformPotion: {fileID: 1387771116485768, guid: 7fe560fbe4450d6488ad1464c1279c9d,
+    type: 3}
+  enemyPrefab: {fileID: 1097009321995878, guid: 7f119146519d742d7953341b07580643,
+    type: 3}
+--- !u!114 &-1645681636197037016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896788399910994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9fda1be0f47f4d2eb0cd4977c7295a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomAuthor: AB
+  designedRoomFile: {fileID: 0}
+  localTilePrefabs:
+  - {fileID: 1614338125090674, guid: 259cbf34c67c31943abf2b604493f113, type: 3}
+  - {fileID: 1614338125090674, guid: b7d43b9ca5ea08e4eabf929051790343, type: 3}
+  roomGridX: 0
+  roomGridY: 0
