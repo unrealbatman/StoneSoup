@@ -51,4 +51,8 @@ public class Jack_key : Tile
 	void DisableCollider() {
 		col.enabled = false;
     }
+
+    public override void takeDamage(Tile tileDamagingUs, int damageAmount, DamageType damageType)
+    {
+    }
 }

@@ -12,8 +12,9 @@ public class Jack_lockedDoor : Tile
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
 		if (collision.TryGetComponent(out Jack_key j)) {
+
 			takeDamage(j, 100);
-			j.takeDamage(this, 100);
+			//j.takeDamage(this, 100);
 		}
 	}
 }
