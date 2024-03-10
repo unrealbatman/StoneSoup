@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: -867588548918994302}
   m_Layer: 0
   m_Name: exit_room
-  m_TagString: Untagged
+  m_TagString: Exit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52,4 +52,8 @@ MonoBehaviour:
   isFurthest: 0
   withTreasureKey: {fileID: 4900000, guid: f74fc9c7c8ae7704b8ab4112dd79e594, type: 3}
   withoutTreasureKey: {fileID: 4900000, guid: f23cf96e7eaf97f479b4eb36cb710506, type: 3}
+  bossUnlocked: {fileID: 4900000, guid: e7df77669e7432f4f85254cfb310dff8, type: 3}
   keyPrefab: {fileID: 1312951893184288, guid: 1ead64f59e5f60d4397244ddc0536a76, type: 3}
+  OurGenerator: {fileID: 114918456137113632, guid: 0b55d79306ef641ccb68d38536de3be0,
+    type: 3}
+  isBossUnlocked: 0
