@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 4009022968896546}
   - component: {fileID: 61055079345250784}
   - component: {fileID: 50444360552277544}
-  - component: {fileID: 8599430233274874320}
+  - component: {fileID: -2360132580900280308}
   m_Layer: 0
-  m_Name: smallexplosive_ball 1
-  m_TagString: Untagged
+  m_Name: explosive_ball
+  m_TagString: Pinball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,7 +45,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 8bf99e611298d4c74bc559b22099de99, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -82,7 +82,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &8599430233274874320
+--- !u!114 &-2360132580900280308
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,30 +91,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 1387771116485768}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7f1a9d9414167543a4c6679752701f5, type: 3}
+  m_Script: {fileID: 11500000, guid: 769a7acca21c262479cc407966954298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   tags: 65
-  tileName: rs8385SmallExplosive
+  tileName: ExplosivePinball
   health: 1
-  deathEffect: {fileID: 1580678788207258, guid: 539ecc7ca508e294eba072484af38ffb,
+  deathEffect: {fileID: 1028137201516130, guid: c6956d67d496541a48fe508b48f70f4b,
     type: 3}
-  deathSFX: {fileID: 8300000, guid: c2d60f4d564424524a6f229a4a72f757, type: 3}
-  heldOffset: {x: 0.2, y: -0.1}
+  deathSFX: {fileID: 8300000, guid: 409fa4ba0ecc74840a0bb7c5c73aa5c0, type: 3}
+  heldOffset: {x: 0, y: 0}
   heldAngle: 0
   tileWereHolding: {fileID: 0}
   aimDirection: {x: 0, y: 0}
-  throwSound: {fileID: 0}
-  throwForce: 3000
+  throwSound: {fileID: 8300000, guid: 2940c3ebcb86849aa84a3ff4b1bf2a46, type: 3}
+  throwForce: 1
   onGroundThreshold: 0.8
-  damageThreshold: 14
+  damageThreshold: 2
   damageForce: 1000
   afterThrowTime: 0.2
-  explosionRadius: 2
-  explosionForce: 2000
-  bounceForce: 800
-  maxBounces: 3
-  timeBeforeExplode: 5
+  explosionRadius: 5
+  explosionForce: 500
+  bounceForce: 1000
+  maxBounces: 20
+  timeBeforeExplode: 3
   normalPulsePeriod: 1
   heldPulsePeriod: 0.5
   startsInAir: 0
@@ -193,7 +193,7 @@ SpriteRenderer:
   m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: af0fdcfd9b1114882be6af237f3c331d, type: 3}
-  m_Color: {r: 0.29404736, g: 0, b: 1, a: 1}
+  m_Color: {r: 0.16862726, g: 0, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

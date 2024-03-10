@@ -70,4 +70,4 @@ MonoBehaviour:
   maxNumExplosives: 5
   possibleSpawnPositions: []
   isFurthest: 0
-  keyPrefab: {fileID: 1753806526501684, guid: afcdda856952e4ebea341cde930fc002, type: 3}
+  keyPrefab: {fileID: 1312951893184288, guid: 1ead64f59e5f60d4397244ddc0536a76, type: 3}

@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4243661851364308}
-  - component: {fileID: 114252373118954356}
+  - component: {fileID: -867588548918994302}
   m_Layer: 0
-  m_Name: start_room
-  m_TagString: Untagged
+  m_Name: exit_room
+  m_TagString: Exit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114252373118954356
+--- !u!114 &-867588548918994302
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,14 +41,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1335745978078546}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9fda1be0f47f4d2eb0cd4977c7295a1, type: 3}
+  m_Script: {fileID: 11500000, guid: 4542ba6c2771a264f886fb6df53d5bef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomAuthor: Rithviik
-  designedRoomFile: {fileID: 4900000, guid: 1d7da88071c43e944846ea7ccc463135, type: 3}
-  localTilePrefabs:
-  - {fileID: 1224687453642000, guid: bba9de82886db444980f5c22f285e992, type: 3}
-  - {fileID: 1312951893184288, guid: 68f68340d004845b1b0a1ace895aa64d, type: 3}
-  - {fileID: 1759002711901290, guid: a756bb40ca54c524dbbc9cb9214128a7, type: 3}
+  roomAuthor: AP Thomson
+  designedRoomFile: {fileID: 4900000, guid: f23cf96e7eaf97f479b4eb36cb710506, type: 3}
+  localTilePrefabs: []
   roomGridX: 0
   roomGridY: 0
+  isFurthest: 0
+  withTreasureKey: {fileID: 4900000, guid: f74fc9c7c8ae7704b8ab4112dd79e594, type: 3}
+  withoutTreasureKey: {fileID: 4900000, guid: f23cf96e7eaf97f479b4eb36cb710506, type: 3}
+  bossUnlocked: {fileID: 4900000, guid: e7df77669e7432f4f85254cfb310dff8, type: 3}
+  keyPrefab: {fileID: 1312951893184288, guid: 1ead64f59e5f60d4397244ddc0536a76, type: 3}
+  OurGenerator: {fileID: 114918456137113632, guid: 0b55d79306ef641ccb68d38536de3be0,
+    type: 3}
+  isBossUnlocked: 0

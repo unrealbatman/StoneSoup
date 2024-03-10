@@ -44,9 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cbb0b41a990c491db5a3893072ee166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startRoomPrefab: {fileID: 1335745978078546, guid: 850bb3f83990641f6a1be4624fc1e67e,
+  startRoomPrefab: {fileID: 1335745978078546, guid: 7990e371a0917204eb9fa842259aa965,
     type: 3}
-  exitRoomPrefab: {fileID: 1335745978078546, guid: cb9529cb24460473b9be220b40230951,
+  exitRoomPrefab: {fileID: 1335745978078546, guid: a336d553348dacd47a18e50cd463822b,
     type: 3}
   globalTilePrefabs:
   - {fileID: 1249101369981090, guid: ad909242602e14ab893ee3381803cc01, type: 3}

@@ -13,7 +13,7 @@ public class Jack_lockedDoorMimic : apt283AStarEnemy
 	{
 		if (collision.TryGetComponent(out Jack_key j)) {
 			takeDamage(j, 100);
-			j.takeDamage(this, 100);
+			//j.takeDamage(this, 100);
 		}
 	}
 }

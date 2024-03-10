@@ -58,12 +58,7 @@ public class rs8385KeySpawner : MonoBehaviour
 
     private IEnumerable<Room> GetNeighbors(Room room, Room[,] roomGrid)
     {
-        // Implement logic to get neighboring rooms based on your grid structure
-        // For example, check adjacent rooms in the roomGrid array.
-
-        // Note: This part depends on your specific room layout and connections.
-        // You may need to modify it to suit your game's design.
-        // This is a simplified example assuming rooms are laid out in a grid.
+        
         int x = room.roomGridX;
         int y = room.roomGridY;
 
@@ -82,46 +77,40 @@ public class rs8385KeySpawner : MonoBehaviour
 
     private void SpawnKeyInRoom(Room room)
     {
-        List<Vector2> UnoccupiedPositions= new List<Vector2>();
         if (room != null)
         {
-            Debug.Log(room.GetType());
             if (room.GetComponent<rs8385BFSRoom>() != null)
             {
-                UnoccupiedPositions = room.GetComponent<rs8385BFSRoom>().possibleSpawnPositions;
-                Debug.Log("BFS Unoccupied: "+ UnoccupiedPositions.Count);
                 room.GetComponent<rs8385BFSRoom>().isFurthest = true;
-
             }
             else if (room.GetComponent<rs8385DFSRoom>() != null)
             {
-                UnoccupiedPositions = room.GetComponent<rs8385DFSRoom>().possibleSpawnPositions;
-                Debug.Log(UnoccupiedPositions[10]);
 
-                Debug.Log("DFS Unoccupied: " + UnoccupiedPositions.Count);
                 room.GetComponent<rs8385DFSRoom>().isFurthest = true;
 
 
             }
             else if (room.GetComponent<rs8385DikjstraRoom>() != null)
             {
-                UnoccupiedPositions = room.GetComponent<rs8385DikjstraRoom>().possibleSpawnPositions;
 
-                Debug.Log("Dikjstra Unoccupied: " + UnoccupiedPositions.Count);
                 room.GetComponent<rs8385DikjstraRoom>().isFurthest = true;
 
-            }else if(room is jfm_room) {
+            }
+            else if(room is jfm_room) 
+            {
                 (room as jfm_room).SpawnRSKey();
 	        }
-            //UnoccupiedPositions[Random.Range(0, UnoccupiedPositions.Count - 1)]
-            // Spawn the key in the specified room
-            //GameObject key = Instantiate(keyPrefab, room.transform.position, Quaternion.identity);
-            // Optionally, you can parent the key to the room if needed
-           // key.transform.parent = room.transform;
+            else if(room is rs8385ExitRoom)
+            {
+               (room as rs8385ExitRoom).isFurthest = true;
+            }
         }
         else
         {
             Debug.LogWarning("No room found to spawn the key.");
         }
     }
+
+
+   
 }
