@@ -36,11 +36,14 @@ public class FireSpread : MonoBehaviour
 
         if (triggered)
         {
+            this.GetComponent<Jack_lockedDoor>().health = 1000;
+            GameManager.isBossOpen = true;
+            GameManager.instructionChange = true;
             StartCoroutine(SpreadFire(StartPoint));
             
            if(GameManager.instance.roomGrid[index.x, index.y].GetComponent<rs8385ExitRoom>())
             {
-                Destroy(GameObject.FindGameObjectWithTag("Exit"));
+                GameObject.FindGameObjectWithTag("Exit").SetActive(false);
             }
 
             newExit = Instantiate(newExit, _transform.position,Quaternion.identity);
@@ -120,61 +123,8 @@ public class FireSpread : MonoBehaviour
 
     
 
-    private void UnlockExit()
-    {
-
-       /* if (GameObject.FindGameObjectWithTag("Exit")!=null)
-        {
-            _transform = GameObject.FindGameObjectWithTag("Exit").transform;
-            Debug.Log(_transform.position);
-
-
-        }
-
-        string initialGridString = ExitUnlocked.text;
-        string[] rows = initialGridString.Trim().Split('\n');
-        int width = rows[0].Trim().Split(',').Length;
-        int height = rows.Length;
-        if (height != LevelGenerator.ROOM_HEIGHT)
-        {
-            throw new UnityException(string.Format("Error in room by {0}. Wrong height, Expected: {1}, Got: {2}", "Rithviik", LevelGenerator.ROOM_HEIGHT, height));
-        }
-        if (width != LevelGenerator.ROOM_WIDTH)
-        {
-            throw new UnityException(string.Format("Error in room by {0}. Wrong width, Expected: {1}, Got: {2}", "Rithviik", LevelGenerator.ROOM_WIDTH, width));
-        }
-        int[,] indexGrid = new int[width, height];
-        for (int r = 0; r < height; r++)
-        {
-            string row = rows[height - r - 1];
-            string[] cols = row.Trim().Split(',');
-            for (int c = 0; c < width; c++)
-            {
-                indexGrid[c, r] = int.Parse(cols[c]);
-            }
-        }
-
-        for (int i = 0; i < width; i++)
-        {
-            for (int j = 0; j < height; j++)
-            {
-                int tileIndex = indexGrid[i, j];
-                if (tileIndex == 0)
-                {
-                    continue; // 0 is nothing.
-                }
-                GameObject tileToSpawn;
-                if (tileIndex < LevelGenerator.LOCAL_START_INDEX)
-                {
-                    tileToSpawn = ourGenerator.globalTilePrefabs[tileIndex - 1];
-                    Tile.spawnTile(tileToSpawn, _transform, i, j);
-
-                }
-
-            }
-        }
-*/
+  
         
 
-    }
+  
 }

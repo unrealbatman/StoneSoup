@@ -52,7 +52,7 @@ MonoBehaviour:
   extraWallsToRemove: 5
   teleportalPrefab: {fileID: 1387771116485768, guid: 381471a24db5d504c9e602537180d2a1,
     type: 3}
-  enemyPrefab: {fileID: 1273737218209362, guid: f6d74b122170b4644be17baf43f29ac9,
+  enemyPrefab: {fileID: 1781302445510578, guid: 16b0864b865574bc4a169084f3bf8cfc,
     type: 3}
   ricochetGunPrefab: {fileID: 1614338125090674, guid: d20a3161b2b51cf4b93b5519b8a6fedc,
     type: 3}

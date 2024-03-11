@@ -42,6 +42,8 @@ public class GameManager : MonoBehaviour {
 		get { return _instance; }
 	}
 
+	public static bool isBossOpen=false;
+	public static bool instructionChange=false;
 
 	// A counter for how many levels we've played so far. 
 	// Perhaps you could use this in your generation to make your rooms steadily increase in difficulty.
