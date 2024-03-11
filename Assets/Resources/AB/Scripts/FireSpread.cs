@@ -71,6 +71,12 @@ public class FireSpread : MonoBehaviour
 
     private IEnumerator SpreadFire(Vector2 startPoint)
     {
+        if (GameObject.Find("author_text"))
+        {
+            GameObject.Find("author_text").gameObject.GetComponent<RoomAuthorText>().triggered = true;
+            FindAnyObjectByType<PlayerHealthText>().gameObject.SetActive(false);
+            FindAnyObjectByType<PlayerItemText>().gameObject.SetActive(false);
+        }
         Queue<Vector2> pointsToSpread = new Queue<Vector2>();
         pointsToSpread.Enqueue(startPoint);
 
