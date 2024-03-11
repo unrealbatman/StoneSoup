@@ -198,8 +198,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 504cae3a8970b4a36a86a9044b514e15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tint: {r: 1, g: 1, b: 1, a: 0}
-  brightness: 0.1
+  tint: {r: 1, g: 0.15544404, b: 0, a: 0}
+  brightness: 200
 --- !u!1 &1901225560337196
 GameObject:
   m_ObjectHideFlags: 0

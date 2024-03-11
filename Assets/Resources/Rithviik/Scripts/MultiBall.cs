@@ -39,6 +39,7 @@ public class MultiBall : Tile
         for (int i = 0; i < numberOfBallsToSpawn; i++)
         {
             GameObject smallPinball = Instantiate(smallPinballPrefab, originalPinball.transform.position, Quaternion.identity);
+            Camera.main.GetComponent<PostProcess>().lightObjects.Add(smallPinball);
 
             // Apply force to the small pinballs (you can customize this force)
             Vector2 forceDirection = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;

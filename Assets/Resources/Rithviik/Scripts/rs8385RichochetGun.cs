@@ -100,6 +100,8 @@ public class rs8385RichochetGun : Tile
 
             // Instantiate and shoot the bullet
             GameObject newBullet = Instantiate(bulletPrefab, tileUsingUs.transform.parent); // Set the player as the parent
+            Camera.main.GetComponent<PostProcess>().lightObjects.Add(newBullet);
+
             newBullet.transform.position = muzzleFlashObj.transform.position;
             newBullet.transform.rotation = Quaternion.LookRotation(Vector3.forward, offsetDirection);
 

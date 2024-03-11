@@ -195,6 +195,7 @@ GameObject:
   - component: {fileID: 4921814412825708}
   - component: {fileID: 61304914532229252}
   - component: {fileID: 5645359993173903076}
+  - component: {fileID: -521765227750153611}
   m_Layer: 0
   m_Name: richochet_gun
   m_TagString: Light
@@ -272,3 +273,17 @@ MonoBehaviour:
   recoilForce: 100
   shootForce: 1000
   cooldownTime: 0.1
+--- !u!114 &-521765227750153611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614338125090674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 504cae3a8970b4a36a86a9044b514e15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tint: {r: 1, g: 0.78034204, b: 0, a: 0}
+  brightness: 0.4

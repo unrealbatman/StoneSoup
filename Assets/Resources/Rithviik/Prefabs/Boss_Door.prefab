@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 61756950755725140}
   - component: {fileID: 252354866520941577}
   - component: {fileID: 706377971939542018}
+  - component: {fileID: 4063672382328420936}
   m_Layer: 0
   m_Name: Boss_Door
   m_TagString: Light
@@ -153,3 +154,17 @@ MonoBehaviour:
   heldAngle: 0
   tileWereHolding: {fileID: 0}
   aimDirection: {x: 0, y: 0}
+--- !u!114 &4063672382328420936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759002711901290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 504cae3a8970b4a36a86a9044b514e15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tint: {r: 1, g: 1, b: 1, a: 0}
+  brightness: 28.79

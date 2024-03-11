@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 61689111175846092}
   m_Layer: 8
   m_Name: vertical_transition_floor
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

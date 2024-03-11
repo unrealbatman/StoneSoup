@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 61055079345250784}
   - component: {fileID: 50444360552277544}
   - component: {fileID: 8599430233274874320}
+  - component: {fileID: -2118788665817844494}
   m_Layer: 0
   m_Name: smallexplosive_ball 1
   m_TagString: Light
@@ -118,6 +119,20 @@ MonoBehaviour:
   normalPulsePeriod: 1
   heldPulsePeriod: 0.5
   startsInAir: 0
+--- !u!114 &-2118788665817844494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387771116485768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 504cae3a8970b4a36a86a9044b514e15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tint: {r: 1, g: 1, b: 1, a: 0}
+  brightness: 100
 --- !u!1 &1689692822392396
 GameObject:
   m_ObjectHideFlags: 0

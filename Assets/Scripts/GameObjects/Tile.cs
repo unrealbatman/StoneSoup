@@ -274,9 +274,12 @@ public class Tile : MonoBehaviour {
 			tileWereHolding.dropped(this);
 		}
 		if (deathEffect != null) {
-			Instantiate(deathEffect, transform.position, Quaternion.identity);
-		}
-		if (deathSFX != null) {
+
+			GameObject gameObject = Instantiate(deathEffect, transform.position, Quaternion.identity);
+            Camera.main.GetComponent<PostProcess>().lightObjects.Add(gameObject);
+
+        }
+        if (deathSFX != null) {
 			AudioManager.playAudio(deathSFX);
 		}
 

@@ -57,7 +57,11 @@ public class rs8385Teleport : Tile
         // Disable teleport temporarily during cooldown
         canTeleport = false;
 
-        GetComponent<ParticleSystem>().Play();
+
+        ParticleSystem particleSystem = GetComponent<ParticleSystem>();
+        Camera.main.GetComponent<PostProcess>().lightObjects.Add(particleSystem.gameObject);
+
+        particleSystem.Play();
 
         // Wait for the specified cooldown duration
         yield return new WaitForSeconds(0.5f); // Adjust the cooldown duration as needed

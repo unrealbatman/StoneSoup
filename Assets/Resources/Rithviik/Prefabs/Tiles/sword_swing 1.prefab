@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 212806748000714832}
   - component: {fileID: 61074903437826796}
   - component: {fileID: 114586047128420938}
+  - component: {fileID: -3379818121934664686}
   m_Layer: 0
   m_Name: sword_swing 1
   m_TagString: Light
@@ -128,3 +129,17 @@ MonoBehaviour:
   parentSwinger: {fileID: 0}
   timeTillDeath: 0.5
   moveForwardSpeed: 1
+--- !u!114 &-3379818121934664686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580678788207258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 504cae3a8970b4a36a86a9044b514e15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tint: {r: 1, g: 0, b: 0, a: 0}
+  brightness: 100
