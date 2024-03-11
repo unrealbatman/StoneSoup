@@ -19,9 +19,26 @@ public class ChangeAudio : MonoBehaviour
     {
         if (GameManager.isBossOpen)
         {
-            AudioSource1.Stop();
-            AudioSource2.Play();
-           GameManager.isBossOpen = false;
-        }   
+            if (AudioSource1.isPlaying)
+            {
+                AudioSource1.Stop();
+                AudioSource2.Play();
+            }
+            
+        }
+
+        else
+        {
+            if (AudioSource2.isPlaying)
+            {
+                AudioSource2.Stop();
+                AudioSource1.Play();
+            }
+           
+            
+
+        }
+
+
     }
 }
