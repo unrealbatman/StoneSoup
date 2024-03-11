@@ -36,6 +36,8 @@ public class FireSpread : MonoBehaviour
 
         if (triggered)
         {
+            GameManager.isBossOpen = true;
+            GameManager.instructionChange = true;
             StartCoroutine(SpreadFire(StartPoint));
             
            if(GameManager.instance.roomGrid[index.x, index.y].GetComponent<rs8385ExitRoom>())
