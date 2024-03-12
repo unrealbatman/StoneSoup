@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class jfm_room : Room
+public class rithvik_room : Room
 {
 	public Vector2 perlinFreq;
 
@@ -13,29 +13,30 @@ public class jfm_room : Room
 	public GameObject treasureKeyPrefab;
 	bool hasSpawnedKey;
 
-	public void SpawnRSKey() {
+	public void SpawnRSKey()
+	{
 		if (hasSpawnedKey) return;
-		for(int i =0; i < criticalPath.Count; i++) {
-			if (indexGrid[criticalPath[i].x, criticalPath[i].y] == 0) {
+		for (int i = 0; i < criticalPath.Count; i++)
+		{
+			if (indexGrid[criticalPath[i].x, criticalPath[i].y] == 0)
+			{
 				Tile.spawnTile(treasureKeyPrefab, transform, criticalPath[i].x, criticalPath[i].y);
 				hasSpawnedKey = true;
 				return;
 			}
 		}
-    }
+	}
 
 	public override void fillRoom(LevelGenerator ourGenerator, ExitConstraint requiredExits)
 	{
-		bool hasExit = false;
-		foreach (Vector2Int ex in requiredExits.requiredExitLocations())
-		{
-			hasExit = true;
-		}
-		if (!hasExit)
-		{
-			requiredExits = new ExitConstraint(false, true, true, true);
-		}
+		//bool hasExit = false;
+		//foreach (Vector2Int ex in requiredExits.requiredExitLocations()) {
+		//	hasExit = true;
+		//}
+		//if (!hasExit) {
 
+		//}
+		//requiredExits = new ExitConstraint(true, true, true, true);
 		int height = LevelGenerator.ROOM_HEIGHT;
 		int width = LevelGenerator.ROOM_WIDTH;
 
@@ -48,8 +49,10 @@ public class jfm_room : Room
 		{
 			for (int y = 0; y < LevelGenerator.ROOM_HEIGHT; y++)
 			{
-				if (y == height - 1|| y == 0) {
-					if ((Random.value < 0.9f)) {
+				if (y == height - 1 || y == 0)
+				{
+					if ((Random.value < 0.9f))
+					{
 						wallMap[x, y] = true;
 					}
 				}
@@ -75,17 +78,21 @@ public class jfm_room : Room
 			Vector2Int start = new Vector2Int(Mathf.RoundToInt(startPos.x), Mathf.RoundToInt(startPos.y));
 			Vector2Int[] path = FindPath(start, exitLocation, wallMap);
 			criticalPath.AddRange(path);
-			if(path == null) {
+			if (path == null)
+			{
 				Debug.Log("null path");
 			}
-			else {
-				for(int i = 0; i < path.Length; i++) {
+			else
+			{
+				for (int i = 0; i < path.Length; i++)
+				{
 					wallMap[path[i].x, path[i].y] = false;
 				}
 			}
 		}
 		int index = 0;
-		while(index < criticalPath.Count - 1) {
+		while (index < criticalPath.Count - 1)
+		{
 			index++;
 			Vector2Int pos = criticalPath[index] + Vector2Int.up;
 			if (!IsValid(pos)) continue;
@@ -95,7 +102,8 @@ public class jfm_room : Room
 				if (!IsValid(pos)) continue;
 				if (wallMap[pos.x, pos.y])
 				{
-					if(Random.value < 0.3) {
+					if (Random.value < 0.3)
+					{
 						//Debug.Log("spawning door!");
 						indexGrid[criticalPath[index].x, criticalPath[index].y] = 5;
 						break;
@@ -125,13 +133,15 @@ public class jfm_room : Room
 			for (int j = 0; j < height; j++)
 			{
 				//only doors in the way
-				if (criticalPath.Contains(new Vector2Int(i, j))) {
+				if (criticalPath.Contains(new Vector2Int(i, j)))
+				{
 					//Debug.Log(indexGrid[i, j]);
 					if (indexGrid[i, j] != 5)
 					{
 						continue;
 					}
-					else {
+					else
+					{
 						if (Random.value < 0.4)
 						{
 							indexGrid[i, j] = 8; //door mimic
@@ -140,20 +150,23 @@ public class jfm_room : Room
 				}
 
 				int tileIndex = indexGrid[i, j];
-				if (wallMap[i, j]) {
+				if (wallMap[i, j])
+				{
 					tileIndex = 1;
 				}
-				else if(tileIndex == 0) {
+				else if (tileIndex == 0)
+				{
 					if (Mathf.PerlinNoise(perlinFreq.x * i + RandomPerlinPoint.x, perlinFreq.y * j + RandomPerlinPoint.y) < 0.45f)
 					{
-						//if(Random.value < 0.1) {
-						//	tileIndex = 6; // key!
-						//}
-						if(Random.value < 0.1)
+						if (Random.value < 0.1)
+						{
+							tileIndex = 6; // key!
+						}else if (Random.value < 0.1)
 						{
 							tileIndex = 7; // molly
 						}
-						else {
+						else
+						{
 							tileIndex = 4; // fire
 						}
 
@@ -181,7 +194,8 @@ public class jfm_room : Room
 	//fuck it, a*
 	// adapted from code adapted that was adapted from code i wrote a few years ago
 	// that was in turn half copying a sebastian lague video
-	Vector2Int[] FindPath(Vector2Int startPos, Vector2Int endPos, bool[,] wallMap) {
+	Vector2Int[] FindPath(Vector2Int startPos, Vector2Int endPos, bool[,] wallMap)
+	{
 		List<Node> open = new();
 		Dictionary<Vector2Int, Node> nodeLookup = new Dictionary<Vector2Int, Node>();
 
@@ -228,7 +242,8 @@ public class jfm_room : Room
 				if (!IsValid(pos)) continue;
 				bool isWall = wallMap[pos.x, pos.y];
 
-				if (nodeLookup.ContainsKey(pos)) {
+				if (nodeLookup.ContainsKey(pos))
+				{
 					//we're re-evaluating an already opened node
 
 					//recreate
@@ -241,7 +256,8 @@ public class jfm_room : Room
 						nodeLookup.Add(reeval.pos, reeval);
 					}
 				}
-				else {
+				else
+				{
 					//new node
 					Node c = CreateNode(pos, endPos, toeval.gcost, toeval.pos, isWall);
 					open.Add(c);
@@ -249,16 +265,19 @@ public class jfm_room : Room
 				}
 			}
 		}
-		if (!nodeLookup.ContainsKey(endPos)) {
+		if (!nodeLookup.ContainsKey(endPos))
+		{
 			Debug.LogError("no end found");
 			return null;
 		}
 		List<Vector2Int> path = new List<Vector2Int>();
 		Vector2Int retrace = endPos;
 		int tries = 0;
-		while (retrace != startPos) {
+		while (retrace != startPos)
+		{
 			tries++;
-			if (tries > 800) {
+			if (tries > 800)
+			{
 				Debug.LogError("couldnt retrace path");
 				return null;
 			}
@@ -310,13 +329,15 @@ public class jfm_room : Room
 		return new Node(pos, f, g, parent);
 	}
 
-	public struct Node {
+	public struct Node
+	{
 		public Vector2Int pos;
 		public int fcost;
 		public int gcost;
 		public Vector2Int parentPosition;
 
-		public Node(Vector2Int po, int f, int g, Vector2Int par) {
+		public Node(Vector2Int po, int f, int g, Vector2Int par)
+		{
 			pos = po;
 			fcost = f;
 			gcost = g;
@@ -324,8 +345,10 @@ public class jfm_room : Room
 		}
 	}
 
-	public bool IsValid(Vector2Int pos){
-		if(pos.x < 0 || pos.x > LevelGenerator.ROOM_WIDTH - 1) {
+	public bool IsValid(Vector2Int pos)
+	{
+		if (pos.x < 0 || pos.x > LevelGenerator.ROOM_WIDTH - 1)
+		{
 			return false;
 		}
 		if (pos.y < 0 || pos.y > LevelGenerator.ROOM_HEIGHT - 1)

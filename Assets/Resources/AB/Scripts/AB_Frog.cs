@@ -28,8 +28,8 @@ public class AB_Frog : apt283Rock
             Destroy(_instance.gameObject);
         }
         _instance = this;
-        DontDestroyOnLoad(gameObject);
-    }
+		Camera.main.GetComponent<PostProcess>().lightObjects.Add(gameObject);
+	}
 
     protected override void Update()
     {
