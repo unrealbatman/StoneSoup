@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 61055079345250784}
   - component: {fileID: 50444360552277544}
   - component: {fileID: 2580324008508961997}
+  - component: {fileID: 6689042110850232470}
   m_Layer: 0
   m_Name: molotov
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,6 +112,20 @@ MonoBehaviour:
   afterThrowTime: 0.2
   firePrefab: {fileID: 1387771116485768, guid: 578bead78c10841efad62a6556256882, type: 3}
   fireWidth: 2
+--- !u!114 &6689042110850232470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387771116485768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 504cae3a8970b4a36a86a9044b514e15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tint: {r: 0.9450981, g: 0.41176474, b: 0.6117647, a: 1}
+  brightness: 0.1
 --- !u!1 &1689692822392396
 GameObject:
   m_ObjectHideFlags: 0
