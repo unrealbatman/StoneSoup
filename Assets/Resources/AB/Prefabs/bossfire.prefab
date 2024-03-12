@@ -57,8 +57,8 @@ MonoBehaviour:
   heldAngle: 0
   tileWereHolding: {fileID: 0}
   aimDirection: {x: 0, y: 0}
-  baseLifeTime: -1
-  lifeExtensionRandomScale: 1
+  baseLifeTime: 10
+  lifeExtensionRandomScale: 2
 --- !u!58 &8837415668356321488
 CircleCollider2D:
   m_ObjectHideFlags: 0

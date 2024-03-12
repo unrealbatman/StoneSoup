@@ -41,9 +41,12 @@ public class FireSpread : MonoBehaviour
             GameManager.instructionChange = true;
             StartCoroutine(SpreadFire(StartPoint));
             
-           if(GameManager.instance.roomGrid[index.x, index.y].GetComponent<rs8385ExitRoom>())
+           if(GameManager.instance.roomGrid[index.x, index.y].TryGetComponent(out rs8385ExitRoom exit))
             {
-                GameObject.FindGameObjectWithTag("Exit").SetActive(false);
+                GameObject go = GameObject.FindGameObjectWithTag("Exit");
+                if(go != null) {
+					go.SetActive(false);
+				}
             }
 
             newExit = Instantiate(newExit, _transform.position,Quaternion.identity);
@@ -102,7 +105,7 @@ public class FireSpread : MonoBehaviour
 
                 float newX = x + i;
                 float newY = y + j;
-                if (newX >= 0 && newX < LevelGenerator.ROOM_WIDTH * 10 && newY >= 0 && newY < LevelGenerator.ROOM_HEIGHT * 10)
+                if (newX >= 0 && newX < LevelGenerator.ROOM_WIDTH * 3 * Tile.TILE_SIZE && newY >= 0 && newY < LevelGenerator.ROOM_HEIGHT * 3 * Tile.TILE_SIZE)
                 {
                     Vector2 newPos = new Vector2(newX, newY);
                     if (Tile.tileAtPoint(newPos, TileTags.Wall) == null && !burnedPositions.Contains(newPos))
