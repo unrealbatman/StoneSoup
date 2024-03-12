@@ -17,7 +17,6 @@ public class GameOverScene : MonoBehaviour {
 	public void tryAgain() {
 		AudioManager.playAudio(clickSound);
 		GameManager.levelNumber = 0;
-		GameManager.isBossOpen = false;
 		SceneManager.LoadScene("PlayScene");
 	}
 
