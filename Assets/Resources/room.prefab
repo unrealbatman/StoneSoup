@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a9f908928305547a0525028f0b6064, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomAuthor: AB
+  roomAuthor: ABB
   designedRoomFile: {fileID: 0}
   localTilePrefabs: []
   roomGridX: 0
