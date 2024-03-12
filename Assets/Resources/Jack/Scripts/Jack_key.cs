@@ -9,6 +9,7 @@ public class Jack_key : Tile
 	private void Awake()
 	{
 		col = GetComponent<Collider2D>();
+		Camera.main.GetComponent<PostProcess>().lightObjects.Add(gameObject);
 	}
 
 	// HACK The following is copied (with portions removed) from apt283Rock.cs

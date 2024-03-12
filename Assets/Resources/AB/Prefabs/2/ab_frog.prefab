@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 61055079345250784}
   - component: {fileID: 50444360552277544}
   - component: {fileID: 2992706688017322868}
+  - component: {fileID: 7137671504335032199}
   m_Layer: 0
   m_Name: ab_frog
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,7 +46,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 8bf99e611298d4c74bc559b22099de99, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.07221565, y: -0.05616775}
@@ -109,6 +110,20 @@ MonoBehaviour:
   damageThreshold: 14
   damageForce: 1000
   afterThrowTime: 0.2
+--- !u!114 &7137671504335032199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387771116485768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 504cae3a8970b4a36a86a9044b514e15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tint: {r: 0.6901961, g: 0.9921569, b: 0.34509805, a: 1}
+  brightness: 0.3
 --- !u!1 &1689692822392396
 GameObject:
   m_ObjectHideFlags: 0
