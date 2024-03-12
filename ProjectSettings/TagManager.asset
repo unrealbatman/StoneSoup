@@ -8,6 +8,7 @@ TagManager:
   - Exit
   - Pinball
   - Light
+  - PLZ
   layers:
   - Default
   - TransparentFX

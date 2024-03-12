@@ -46,7 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomAuthor: AP Thomson
   designedRoomFile: {fileID: 4900000, guid: f23cf96e7eaf97f479b4eb36cb710506, type: 3}
-  localTilePrefabs: []
+  localTilePrefabs:
+  - {fileID: 1249101369981090, guid: 5b12e40d8d7614ee19c80eaab6e46d55, type: 3}
   roomGridX: 0
   roomGridY: 0
   isFurthest: 0
