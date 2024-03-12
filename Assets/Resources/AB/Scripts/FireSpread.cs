@@ -40,19 +40,32 @@ public class FireSpread : MonoBehaviour
             GameManager.isBossOpen = true;
             GameManager.instructionChange = true;
             StartCoroutine(SpreadFire(StartPoint));
-            
-           if(GameManager.instance.roomGrid[index.x, index.y].TryGetComponent(out rs8385ExitRoom exit))
+           /* if (GameManager.spawnNewExit == true)
             {
-                GameObject go = GameObject.FindGameObjectWithTag("Exit");
-                if(go != null) {
-					go.SetActive(false);
-				}
-            }
+                if (GameManager.instance.roomGrid[index.x, index.y].TryGetComponent(out rs8385ExitRoom exit))
+                {
 
-            newExit = Instantiate(newExit, _transform.position,Quaternion.identity);
-            newExit.GetComponent<rs8385ExitRoom>().isBossUnlocked = true;
-            this.GetComponent<Jack_lockedDoor>().health += 200;
-            triggered = false;
+                    GameObject go = GameObject.FindGameObjectWithTag("Exit");
+
+                    if (go != null)
+                    {_transform = go.transform;
+                        Destroy(go);
+                    }
+                }
+
+                newExit = Instantiate(newExit, _transform.position, Quaternion.identity);
+                newExit.GetComponent<rs8385ExitRoom>().isBossUnlocked = true;
+                this.GetComponent<Jack_lockedDoor>().health += 200;
+                triggered = false;
+
+                GameManager.spawnNewExit = false;
+            }
+            
+               */
+
+            
+          
+           
             }
     }
 
