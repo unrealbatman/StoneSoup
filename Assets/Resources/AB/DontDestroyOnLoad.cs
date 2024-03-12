@@ -11,7 +11,6 @@ public class DontDestroyOnLoad : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            
             DontDestroyOnLoad(gameObject);
         }
         else if (Instance != this)
@@ -19,6 +18,4 @@ public class DontDestroyOnLoad : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-   
 }
